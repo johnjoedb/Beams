@@ -1,0 +1,22 @@
+steel_sections = [
+    {"Shape": "127x76 UB 13", "Area": 1650, "Depth": 127, "Width": 76, "Ix": 4730000, "Iy": 557000, "Plastic_Mod_Xp": 84200, "Plastic_Mod_Yp": 22600},
+    {"Shape": "152x89 UB 16", "Area": 2030, "Depth": 152.4, "Width": 88.7, "Ix": 8340000, "Iy": 898000, "Plastic_Mod_Xp": 123000, "Plastic_Mod_Yp": 31200},
+    {"Shape": "178x102 UB 19", "Area": 2430, "Depth": 177.8, "Width": 101.2, "Ix": 13560000, "Iy": 1370000, "Plastic_Mod_Xp": 171000, "Plastic_Mod_Yp": 41600},
+    {"Shape": "203x102 UB 23", "Area": 2940, "Depth": 203.2, "Width": 101.8, "Ix": 21050000, "Iy": 1640000, "Plastic_Mod_Xp": 234000, "Plastic_Mod_Yp": 49800},
+    {"Shape": "203x133 UB 25", "Area": 3200, "Depth": 203.2, "Width": 133.2, "Ix": 23400000, "Iy": 3080000, "Plastic_Mod_Xp": 258000, "Plastic_Mod_Yp": 70900},
+    {"Shape": "203x133 UB 30", "Area": 3820, "Depth": 206.8, "Width": 133.9, "Ix": 28960000, "Iy": 3850000, "Plastic_Mod_Xp": 314000, "Plastic_Mod_Yp": 88200},
+    {"Shape": "254x102 UB 22", "Area": 2800, "Depth": 254, "Width": 101.6, "Ix": 28410000, "Iy": 1190000, "Plastic_Mod_Xp": 259000, "Plastic_Mod_Yp": 37300},
+    {"Shape": "254x102 UB 25", "Area": 3200, "Depth": 257.2, "Width": 101.9, "Ix": 34150000, "Iy": 1490000, "Plastic_Mod_Xp": 306000, "Plastic_Mod_Yp": 46000},
+    {"Shape": "254x102 UB 28", "Area": 3610, "Depth": 260.4, "Width": 102.2, "Ix": 40050000, "Iy": 1790000, "Plastic_Mod_Xp": 353000, "Plastic_Mod_Yp": 54800},
+    {"Shape": "254x146 UB 31", "Area": 3970, "Depth": 251.4, "Width": 146.1, "Ix": 44130000, "Iy": 4480000, "Plastic_Mod_Xp": 393000, "Plastic_Mod_Yp": 94100},
+    {"Shape": "254x146 UB 37", "Area": 4720, "Depth": 256, "Width": 146.4, "Ix": 55370000, "Iy": 5710000, "Plastic_Mod_Xp": 483000, "Plastic_Mod_Yp": 119000},
+    {"Shape": "254x146 UB 43", "Area": 5480, "Depth": 259.6, "Width": 147.3, "Ix": 65440000, "Iy": 6770000, "Plastic_Mod_Xp": 566000, "Plastic_Mod_Yp": 141000},
+    {"Shape": "305x102 UB 25", "Area": 3160, "Depth": 305.1, "Width": 101.6, "Ix": 44550000, "Iy": 1230000, "Plastic_Mod_Xp": 342000, "Plastic_Mod_Yp": 38800},
+    {"Shape": "305x102 UB 28", "Area": 3590, "Depth": 308.7, "Width": 101.8, "Ix": 53660000, "Iy": 1550000, "Plastic_Mod_Xp": 403000, "Plastic_Mod_Yp": 48500},
+    {"Shape": "305x102 UB 33", "Area": 4180, "Depth": 312.7, "Width": 102.4, "Ix": 65010000, "Iy": 1940000, "Plastic_Mod_Xp": 481000, "Plastic_Mod_Yp": 60000}
+]
+
+# Example usage:
+# Fetch data for a specific section
+section_127x76 = next((s for s in steel_sections if s["Shape"] == "127x76 UB 13"), None)
+print(section_127x76)
